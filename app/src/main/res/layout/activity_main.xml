@@ -8,26 +8,37 @@
 
     <Button
         android:id="@+id/btnFibonacci"
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:text="Fibonacci"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="@string/fibonacci"
+        app:layout_constraintBottom_toTopOf="@+id/btnOdd"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.249" />
+        app:layout_constraintVertical_bias="0.88" />
 
     <Button
         android:id="@+id/btnOdd"
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:text="Odd"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="@string/odd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFibonacci"
-        app:layout_constraintVertical_bias="0.147" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPalindrome"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="@string/palindrome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOdd"
+        app:layout_constraintVertical_bias="0.120000005" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

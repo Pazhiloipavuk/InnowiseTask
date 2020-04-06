@@ -10,6 +10,7 @@ class OddActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTitle(R.string.odd_activity_title)
         setContentView(R.layout.activity_odd)
 
         initCalculateOddSequenceButton()
@@ -32,7 +33,7 @@ class OddActivity : AppCompatActivity() {
     }
 
     private fun showOddSequence() {
-        var sequenceString = StringBuilder()
+        val sequenceString = StringBuilder()
 
         sequence.forEach {
             sequenceString.append(it)

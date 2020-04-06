@@ -12,6 +12,7 @@ class FibonacciActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTitle(R.string.fibonacci_activity_title)
         setContentView(R.layout.activity_fibonacci)
 
         initCalculateFibonacciSequenceButton()
@@ -44,7 +45,7 @@ class FibonacciActivity : AppCompatActivity() {
     }
 
     private fun showFibonacciSequence() {
-        var sequenceString = StringBuilder()
+        val sequenceString = StringBuilder()
 
         sequence.forEach {
             sequenceString.append(it)

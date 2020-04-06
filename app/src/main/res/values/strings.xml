@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">InnowiseTask</string>
+    <string name="fibonacci_activity_title">Fibonacci</string>
+    <string name="odd_activity_title">Odd numbers</string>
+    <string name="palindrome_activity_title">Palindrome</string>
+    <string name="main_activity_title">Menu</string>
+    <string name="input">Input N</string>
+    <string name="fibonacci">Part 1</string>
+    <string name="odd">Part 2</string>
+    <string name="palindrome">Part 3</string>
+    <string name="calculate">Calculate</string>
 </resources>

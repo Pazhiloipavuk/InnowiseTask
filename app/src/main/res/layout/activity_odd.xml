@@ -6,35 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".FibonacciActivity">
 
-    <TextView
-        android:id="@+id/txtInputOdd"
-        android:layout_width="58dp"
-        android:layout_height="23dp"
-        android:text="Input N"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.073"
-        android:gravity="center"/>
-
     <EditText
         android:id="@+id/edtInputOdd"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="84dp"
+        android:gravity="center"
+        android:hint="@string/input"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtInputOdd"
-        android:gravity="center"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnCalculateSequenceOdd"
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:text="Calculate"
-        app:layout_constraintBottom_toTopOf="@+id/txtSequenceOdd"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/calculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtInputOdd" />
@@ -43,10 +33,12 @@
         android:id="@+id/txtSequenceOdd"
         android:layout_width="300dp"
         android:layout_height="450dp"
+        android:textColor="@color/colorBlack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtInputOdd" />
+        app:layout_constraintTop_toBottomOf="@+id/edtInputOdd"
+        app:layout_constraintVertical_bias="0.86" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

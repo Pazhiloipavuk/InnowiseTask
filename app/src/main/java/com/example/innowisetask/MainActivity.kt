@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTitle(R.string.main_activity_title)
         setContentView(R.layout.activity_main)
 
         initAllListeners()
@@ -22,6 +23,11 @@ class MainActivity : AppCompatActivity() {
 
         btnOdd.setOnClickListener {
             val intent = Intent(this, OddActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnPalindrome.setOnClickListener {
+            val intent = Intent(this, PalindromeActivity::class.java)
             startActivity(intent)
         }
     }
